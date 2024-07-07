@@ -1,27 +1,25 @@
 # Basic-Home-Lab
 
-# PROJECTNAME
-
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The objective of this basic home lab project was to create a controlled environment for testing new cybersecurity tools and techniques using Vultr, Kali Linux, and a Windows machine. The lab setup allowed for safe execution of malware samples to observe potential indicators of compromise without risking the security of personal or production systems. Additionally, by installing Sysmon and Splunk on the Windows machine, telemetry data was generated and analyzed, enhancing the understanding of system behavior during malware activity. This project aimed to develop practical skills in threat detection and response in a secure and isolated setting.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+
+- **Malware Analysis**: Gained practical experience in safely executing and analyzing malware to identify indicators of compromise without affecting personal or production systems.
+- **Tool Proficiency**: Developed skills in using cybersecurity tools like Sysmon and Splunk for system monitoring and telemetry data analysis.
+- **Network Configuration**: Enhanced ability to set up and configure virtual machines and networks using Vultr, ensuring secure and isolated environments for testing.
+- **Threat Detection**: Improved capability to detect and respond to threats through hands-on practice in a controlled lab setting.
+- **Data Analysis**: Strengthened skills in generating and analyzing telemetry data to understand system behavior during security incidents.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- **Vultr**: Cloud infrastructure for creating and managing virtual machines.
+- **Kali Linux**: Linux distribution used for penetration testing and security auditing.
+- **Windows Machine**: Operating system used to run malware and generate telemetry.
+- **Sysmon**: System Monitor tool for tracking system activity and creating logs.
+- **Splunk**: Platform for searching, monitoring, and analyzing machine-generated data.
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc

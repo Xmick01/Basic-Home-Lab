@@ -1,4 +1,4 @@
-# Basic-Home-Lab
+# Basic Home Lab
 
 ## Objective
 
@@ -21,11 +21,5 @@ The objective of this basic home lab project was to create a controlled environm
 - **Sysmon**: System Monitor tool for tracking system activity and creating logs.
 - **Splunk**: Platform for searching, monitoring, and analyzing machine-generated data.
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Step 1: Spin up Two VMs
 
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*

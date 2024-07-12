@@ -83,4 +83,5 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 ![msfvenom amazon giftcard](https://github.com/user-attachments/assets/03fdf43b-ca02-4a22-a304-2d10e3aa2a03)
 
-* Copy the reverse TCP payload. The lhost will be the IP of the attacker machine. The default port from interpreter is 4444. The format (-f) is going to be exe and the filename and path (-o) will be Amazon_giftcard.pdf.exe
+* This command will generate malware using meterpreter's reverse TCP payload that will connect back to Kali Linux based on the lhost and lport. The default port from meterpreter is 4444. The file format (-f) will be exe and the name (-o) will be Amazon_giftcard.pdf.exe.
+* Type ls to make sure the file exists. 

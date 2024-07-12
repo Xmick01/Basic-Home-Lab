@@ -21,5 +21,11 @@ The objective of this basic home lab project was to create a controlled environm
 - **Sysmon**: System Monitor tool for tracking system activity and creating logs.
 - **Splunk**: Platform for searching, monitoring, and analyzing machine-generated data.
 
+  ## Diagram of Basic Home Lab 
+
+  ![basic home lab diagram](https://github.com/user-attachments/assets/360754e5-e360-458d-8a25-69b67206d902)
+
+The diagram illustrates the flow of a basic home lab setup for cybersecurity testing. The network begins with an internet connection, followed by a router that connects to Vultr, a cloud service provider. Within Vultr, a Virtual Private Cloud (VPC) is established, housing two machines: a Kali Linux machine with IP 10.0.0.4 and a Windows machine with IP 10.0.0.3. This setup allows the user to safely test malware and cybersecurity tools within an isolated environment. The Kali Linux machine is typically used for penetration testing and other offensive security tasks, while the Windows machine, equipped with tools like Sysmon and Splunk, is used for monitoring and analyzing security events. The VPC ensures that any potential threats or malware are contained within the lab environment, protecting the rest of the network from compromise.
+
 ## Step 1: Spin up Two VMs
 

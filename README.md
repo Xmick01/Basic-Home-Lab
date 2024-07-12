@@ -74,3 +74,13 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 ![nmaps 2](https://github.com/user-attachments/assets/d6a2dd89-0335-42ee-93bf-86928596d895)
 
  - port 3389 is the Remote Desktop Protocol(RDP) this port being open leaves it vulnerable for hackers. 
+
+* To create the malware that will be used to attack the target machine, use msfvenom in Kali Linux.
+
+![msfvenom](https://github.com/user-attachments/assets/ed6b0c93-bc1b-4afe-8c00-bd38c4abd2c4)
+
+* Because the RDP port is open, I am going with the shell reverse TCP.
+
+![msfvenom amazon giftcard](https://github.com/user-attachments/assets/03fdf43b-ca02-4a22-a304-2d10e3aa2a03)
+
+* Copy the reverse TCP payload. The lhost will be the IP of the attacker machine. The default port from interpreter is 4444. The format (-f) is going to be exe and the filename and path (-o) will be Amazon_giftcard.pdf.exe

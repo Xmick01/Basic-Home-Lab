@@ -66,3 +66,11 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 * When completed, ping the two VMs to make sure that connection is established.
 ![kali ping to windows](https://github.com/user-attachments/assets/183c3f0e-429d-4476-93e8-0a77f0597d71)
 ![window ping kali](https://github.com/user-attachments/assets/c27fbab1-d08f-4eef-a0ed-86611f6f61bc)
+
+## Step 4: Attack Target Machine
+* On the Kali Linux machine, open the terminal and type nmap -A followed by the IP address of the windows machine -Pn to see what ports are open.
+
+![nmaps 1](https://github.com/user-attachments/assets/713a35be-150e-45f4-b90b-0ae2d47557d3)
+![nmaps 2](https://github.com/user-attachments/assets/d6a2dd89-0335-42ee-93bf-86928596d895)
+
+ - port 3389 is the Remote Desktop Protocol(RDP) this port being open leaves it vulnerable for hackers. 

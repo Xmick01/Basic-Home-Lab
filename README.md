@@ -34,7 +34,15 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 ![two vms](https://github.com/user-attachments/assets/e034d808-0eff-47eb-bcf6-c19948650f6c)
 
-## Step 2: Configure VMs
+## Step 2: Download Sysmon and Splunk to Windows Machine
+* Download [Sysmon](https://www.youtube.com/watch?v=uJ7pv6blyog) and [Splunk Enterprise](https://www.youtube.com/watch?v=iaBJ-PK8_RI)
+* Sysmon is a powerful tool used specifically for monitoring detailed system activity on Windows machines.
+* Splunk is a comprehensive platform for collecting, indexingm searching, and analyzing logs and events.
+* Together, they work well to enhance an organization's ability to detect and respond to security incidents.
+  
+
+
+## Step 3: Configure VMs
 
 * After making the VMs, it's time to create a Virtual Private Cloud (VPC). The VPC makes sure that the two VMs are able to communicate with each other over a private network and to secure the lab environment to contain malware.
 * Vultr gives the option to make a VPC
@@ -54,3 +62,7 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 * On the Windows machine, navigate to network connections and select IPv4 properties. DHCP is automatically configured just like in the Kali Linux instance. Unlike with Kali Linux, adding the static IP is more straigh-forward. Just select "Use the following IP address:" and then fill out the IP address and subnet mask provided by the VPC.
 
 ![windows config](https://github.com/user-attachments/assets/a8b78505-23bd-424c-ae14-ba94d290b3a2)
+
+* When completed, ping the two VMs to make sure that connection is established.
+![kali ping to windows](https://github.com/user-attachments/assets/183c3f0e-429d-4476-93e8-0a77f0597d71)
+![window ping kali](https://github.com/user-attachments/assets/c27fbab1-d08f-4eef-a0ed-86611f6f61bc)

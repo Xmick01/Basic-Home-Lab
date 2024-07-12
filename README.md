@@ -85,3 +85,8 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 * This command will generate malware using meterpreter's reverse TCP payload that will connect back to Kali Linux based on the lhost and lport. The default port from meterpreter is 4444. The file format (-f) will be exe and the name (-o) will be Amazon_giftcard.pdf.exe.
 * Type ls to make sure the file exists. 
+
+* Now that the malware has been created, it's time to open up a handler that will listen to the 4444 port.
+
+![msfconsole](https://github.com/user-attachments/assets/48b34f4b-a995-4738-b133-569b2ab84a69)
+![msfconsole 2](https://github.com/user-attachments/assets/73b79c84-a783-45c7-9cd3-1a4f4ff531e5)

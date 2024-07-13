@@ -67,7 +67,7 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 ![kali ping to windows](https://github.com/user-attachments/assets/183c3f0e-429d-4476-93e8-0a77f0597d71)
 ![window ping kali](https://github.com/user-attachments/assets/c27fbab1-d08f-4eef-a0ed-86611f6f61bc)
 
-## Step 4: Attack Target Machine
+## Step 4: Make the Malware
 * On the Kali Linux machine, open the terminal and type nmap -A followed by the IP address of the windows machine -Pn to see what ports are open.
 
 ![nmaps 1](https://github.com/user-attachments/assets/713a35be-150e-45f4-b90b-0ae2d47557d3)
@@ -86,7 +86,29 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 * This command will generate malware using meterpreter's reverse TCP payload that will connect back to Kali Linux based on the lhost and lport. The default port from meterpreter is 4444. The file format (-f) will be exe and the name (-o) will be Amazon_giftcard.pdf.exe.
 * Type ls to make sure the file exists. 
 
-* Now that the malware has been created, it's time to open up a handler that will listen to the 4444 port.
+* Now that the malware has been created, it's time to open up a handler and configure the setting to make sure that the lhost and lport matches the reverse TCP payload.
 
 ![msfconsole](https://github.com/user-attachments/assets/48b34f4b-a995-4738-b133-569b2ab84a69)
 ![msfconsole 2](https://github.com/user-attachments/assets/73b79c84-a783-45c7-9cd3-1a4f4ff531e5)
+
+
+* Afterwards, set up a http server on Kali Linux so the Windows machine can download the malware.
+   - on Kali Linux, run the command python3 -m http.server 9999
+
+## Step 5: Download and Run Malware
+
+* On the Windows machine, turn off virus and threat protections in Windows Security. The malware that was created is easily thwarted by basic malware protections provided by Windows Security.
+
+* Afterwards, navigate to the http server, download the malware, and run it.
+
+![windows download malware](https://github.com/user-attachments/assets/00b8b109-32e3-4da3-8ed3-aba6a15c95b0)
+
+* Open up command prompt and run the command nstat -anob to see if there is an established connection to the Kali machine.
+
+![kali windows connection](https://github.com/user-attachments/assets/f04aff0f-ce2d-4a5f-93df-277cece06a90)
+
+* Over on Kali, there should be an open shell in the handler
+
+![kali windows connection 2](https://github.com/user-attachments/assets/202d20ac-27d8-47f9-806a-33e19f4ed1f0)
+
+

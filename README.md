@@ -37,7 +37,7 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 ## Step 2: Download Sysmon and Splunk to Windows Machine
 * Download [Sysmon](https://www.youtube.com/watch?v=uJ7pv6blyog) and [Splunk Enterprise](https://www.youtube.com/watch?v=iaBJ-PK8_RI)
 * Sysmon is a powerful tool used specifically for monitoring detailed system activity on Windows machines.
-* Splunk is a comprehensive platform for collecting, indexingm searching, and analyzing logs and events.
+* Splunk is a comprehensive platform for collecting, indexing, searching, and analyzing logs and events.
 * Together, they work well to enhance an organization's ability to detect and respond to security incidents.
   
 
@@ -113,3 +113,17 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 * Run a few commands to get information from the Windows machine. This will generate telemetry in Splunk.
 ![windows ip config from kali](https://github.com/user-attachments/assets/a7fbf149-591e-4be4-8f3c-d531c85ccb53)
+
+## Step 6: Analyzing Logs
+
+* After running a few commands from the Kali Linux machine head over to the Windows machine and log into Splunk.
+* Splunk has a wide range of fields that can be used to analyze events.
+  
+  ![event details](https://github.com/user-attachments/assets/bdd70c07-099f-431d-a4e4-a02fd7526a48)
+
+* From this image we can see that the Amazon_giftcard was the malware that triggered the event and that command prompt was the process used to get access to the host.
+* To get more information, take the ProcessGuid and copy paste it into the search. Make a table with the queried information.
+
+![table event final](https://github.com/user-attachments/assets/3a64f268-6ec4-44a7-bd0a-8b3ef1b1daf5)
+
+* Here we can see the parentimage Amazon_giftcard.pdf.exe spawned cmd.exe and that cmd.exe ran net user, net localgroup, and ipconfig.

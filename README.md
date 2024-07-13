@@ -126,4 +126,4 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 ![table event final](https://github.com/user-attachments/assets/3a64f268-6ec4-44a7-bd0a-8b3ef1b1daf5)
 
-* Here we can see the parentimage Amazon_giftcard.pdf.exe spawned cmd.exe and that cmd.exe ran net user, net localgroup, and ipconfig.
+* Here we can see the parentimage Amazon_giftcard.pdf.exe produced cmd.exe and it ran net user, net localgroup, and ipconfig.

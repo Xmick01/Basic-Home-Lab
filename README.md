@@ -73,7 +73,7 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 ![nmaps 1](https://github.com/user-attachments/assets/713a35be-150e-45f4-b90b-0ae2d47557d3)
 ![nmaps 2](https://github.com/user-attachments/assets/d6a2dd89-0335-42ee-93bf-86928596d895)
 
- - port 3389 is the Remote Desktop Protocol(RDP) this port being open leaves it vulnerable for hackers. 
+ - port 3389 is the Remote Desktop Protocol(RDP) this port being open leaves it vulnerable to a reverse TCP payload.
 
 * To create the malware that will be used to attack the target machine, use msfvenom in Kali Linux.
 

@@ -107,8 +107,9 @@ The diagram illustrates the flow of a basic home lab setup for cybersecurity tes
 
 ![kali windows connection](https://github.com/user-attachments/assets/f04aff0f-ce2d-4a5f-93df-277cece06a90)
 
-* Over on Kali, there should be an open shell in the handler
+* Over on Kali, there should be an open shell in the handler with remote access to the Windows machine.
 
 ![kali windows connection 2](https://github.com/user-attachments/assets/202d20ac-27d8-47f9-806a-33e19f4ed1f0)
 
-
+* Run a few commands to get information from the Windows machine. This will generate telemetry in Splunk.
+![windows ip config from kali](https://github.com/user-attachments/assets/a7fbf149-591e-4be4-8f3c-d531c85ccb53)
